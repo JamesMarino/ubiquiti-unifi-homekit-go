@@ -8,3 +8,7 @@ devices:
     name: Bedroom Light
     id: 123456789abcdefabcde
     type: switch
+  - manufacturer: Tuya
+    name: James Desk Light
+    id: 223456789abcdefabcde
+    type: switch_led
