@@ -16,10 +16,10 @@ func NewTuya(deviceId string, deviceType string) Provider {
 	return Provider{
 		clientId:     ClientId,
 		clientSecret: ClientSecret,
-		currentTime:  getCurrentTime(),
 		deviceId:     deviceId,
 		deviceType:   deviceType,
 		accessToken:  "",
+		currentTime:  "",
 	}
 }
 
@@ -30,6 +30,8 @@ func (t *Provider) AuthenticationRequest() error {
 	if err != nil {
 		return err
 	}
+
+	t.currentTime = getCurrentTime()
 
 	requestHeaders := map[string]string{
 		"t":           t.currentTime,
