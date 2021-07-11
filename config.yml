@@ -1,0 +1,14 @@
+bridge:
+  name: HomeKit Bridge
+  manufacturer: Apple
+  pin: 12345678
+  device_storage_path: data
+devices:
+  - manufacturer: Tuya
+    name: Bedroom Light
+    id: 123456789abcdefabcde
+    type: switch
+  - manufacturer: Tuya
+    name: James Desk Light
+    id: 223456789abcdefabcde
+    type: switch_led

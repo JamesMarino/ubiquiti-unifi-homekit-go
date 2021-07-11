@@ -45,3 +45,5 @@ Temporary Items
 # Custom
 .env
 .idea
+data/
+homekit
